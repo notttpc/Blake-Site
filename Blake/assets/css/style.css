@@ -1033,6 +1033,9 @@ img {
   background: url("../img/Contact/nasa-Q1p7bh3SHj8-unsplash.jpg") top right;
   background-size: cover;
 }
+.contact .section-title h2 {
+  color: white;
+}
 
 .contact .info {
   width: 100%;
