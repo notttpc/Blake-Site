@@ -113,6 +113,8 @@ h6 {
   opacity: 1;
 }
 
+
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -147,24 +149,6 @@ h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Header Social Links
---------------------------------------------------------------*/
-#links {
-  width: 100%;
-  height: 105vh;
-  background: url("../img/Links/tim-foster-Sf23azHZRR4-unsplash.jpg") top right;
-  background-size: cover;
-}
-#links .icon-box {
-  padding-left: 40vh;
-  padding-top: 20vh;
-}
-
-#links h2 {
-  padding-top: 10vh;
-  color: #34b7a7;
-}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -420,7 +404,7 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 93vh;
+  height: 80vh;
   background-color: rgba(22, 30, 56, 0.8);
   overflow: hidden;
   position: relative;
@@ -772,27 +756,88 @@ name title
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Resume
 --------------------------------------------------------------*/
-#hero {
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #222222;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #34b7a7;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #1d685f;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #effbf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #34b7a7;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #34b7a7;
+}
+
+/*--------------------------------------------------------------
+# Hero Section Resume
+--------------------------------------------------------------*/
+#car {
   width: 100%;
   height: 100vh;
   background: url("../img/Resume/tyler-clemmensen-Zs_L-plsZzg-unsplash.jpg") top right;
   background-size: cover;
 }
 
-#hero .container {
+#car .container {
   padding-top: 70px;
   position: relative;
 }
 
 @media (max-width: 992px) {
-  #hero .container {
+  #car .container {
     padding-top: 58px;
   }
 }
 
-#hero h1 {
+#car h1 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
@@ -800,13 +845,13 @@ name title
   color: white;
 }
 
-#hero h2 {
+#car h2 {
   color: #6f6f6f;
   margin: 10px 0 0 0;
   font-size: 22px;
 }
 
-#hero .btn-about {
+#car .btn-about {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
@@ -821,20 +866,19 @@ name title
   background: #34b7a7;
 }
 
-#hero .btn-about:hover {
+#car .btn-about:hover {
   background: #3dc8b7;
 }
 
 @media (min-width: 1024px) {
-  #hero {
+  #car {
     background-attachment: fixed;
   }
 }
 
 @media (max-width: 992px) {
-  #hero:before {
+  #car:before {
     content: "";
-    background: rgba(255, 255, 255, 0.8);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -842,26 +886,58 @@ name title
     right: 0;
   }
 
-  #hero h1 {
+  #car h1 {
     font-size: 28px;
     line-height: 36px;
   }
 
-  #hero h2 {
+  #car h2 {
     font-size: 18px;
     line-height: 24px;
   }
 }
 
 /*--------------------------------------------------------------
-# Services
+# link
 --------------------------------------------------------------*/
+#services {
+  width: 100%;
+  background: url("../img/nam-hoang-RHNiArBkukE-unsplash.jpg") top right;
+  background-size: cover;
+}
+#services .section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #fff;
+  background-color: rgba(127, 137, 161, 0.25);
+}
+
+#services .section-title p {
+  background-color: rgba(127, 137, 161, 0.25);
+  color: #fff;
+}
+
+#services .sub-title h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #fff;
+  background-color: rgba(127, 137, 161, 0.25);
+}
+
 .services .icon-box {
   text-align: center;
-  padding: 70px 20px 80px 20px;
+  padding: 100px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
-  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+  background: rgb(250, 249, 246);
+  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.3);
 }
 
 .services .icon-box .icon {
@@ -894,7 +970,7 @@ name title
 
 .services .icon-box h4 {
   font-weight: 600;
-  margin: 10px 0 15px 0;
+  margin: 100px 0 20px 0;
   font-size: 22px;
 }
 
@@ -903,136 +979,231 @@ name title
   transition: ease-in-out 0.3s;
 }
 
+.services .icon-box h4 a:hover {
+  font-size: 25px;
+  color: #49cbbb;
+}
+
+.services .icon img {
+  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.7);
+}
+
 .services .icon-box p {
-  line-height: 24px;
+  line-height: px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.services .iconbox-blue i {
-  color: #47aeff;
-}
-
-.services .iconbox-blue:hover .icon i {
-  color: #fff;
-}
-
-.services .iconbox-blue:hover .icon path {
-  fill: #47aeff;
-}
-
-.services .iconbox-orange i {
-  color: #ffa76e;
-}
-
-.services .iconbox-orange:hover .icon i {
-  color: #fff;
-}
-
-.services .iconbox-orange:hover .icon path {
-  fill: #ffa76e;
-}
-
-.services .iconbox-pink i {
-  color: #e80368;
-}
-
-.services .iconbox-pink:hover .icon i {
-  color: #fff;
-}
-
-.services .iconbox-pink:hover .icon path {
-  fill: #e80368;
-}
-
-.services .iconbox-yellow i {
-  color: #ffbb2c;
-}
-
-.services .iconbox-yellow:hover .icon i {
-  color: #fff;
-}
-
-.services .iconbox-yellow:hover .icon path {
-  fill: #ffbb2c;
-}
-
-.services .iconbox-red i {
-  color: #ff5828;
-}
-
-.services .iconbox-red:hover .icon i {
-  color: #fff;
-}
-
-.services .iconbox-red:hover .icon path {
-  fill: #ff5828;
-}
-
-.services .iconbox-teal i {
-  color: #11dbcf;
-}
-
-.services .iconbox-teal:hover .icon i {
-  color: #fff;
-}
-
-.services .iconbox-teal:hover .icon path {
-  fill: #11dbcf;
-}
-/*--------------------------------------------------------------
-# Links
---------------------------------------------------------------*/
-.links .row
-
-img {
-  border-radius: 5%;
-}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-#background {
+#portfolio {
   width: 100%;
-  height: 70vh;
-  background: url("../img/portfolio/arnie-chou-KZh5yFuPLvY-unsplash.jpg") top right;
+  background: url("../img/portfolio/octavian-dan-b21Ty33CqVs-unsplash.jpg") top right;
   background-size: cover;
 }
 
-.dungeon h2{
-  color: red;
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
 }
 
-#background2 {
-  width: 100%;
-  height: 70vh;
-  background: url("../img/portfolio/mediocre-studio-kU-WKSyTcp4-unsplash.jpg") top right;
-  background-size: cover;
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
 }
 
-.eightball {
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 16px 10px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50px;
+}
+
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+  color: #fff;
+  background: #34b7a7;
+}
+
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(34, 34, 34, 0.6);
+}
+
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: rgba(34, 34, 34, 0.6);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap img {
+  transition: all ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+  text-align: center;
+  z-index: 4;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: #fff;
+  margin: 0 5px 0 0;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  color: #78d9cd;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover img {
+  transform: scale(1.2);
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+.portfolio .section-title p {
+  color: white;
+}
+.portfolio .section-title h2 {
   color: white;
 }
 
-#background3 {
-  width: 100%;
-  height: 70vh;
-  background: url("../img/portfolio/artem-beliaikin-N35J0N8ZglQ-unsplash.jpg") top right;
-  background-size: cover;
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+.portfolio-details {
+  padding-top: 0;
 }
 
-.store {
-  color: orange;
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
 }
+
+.portfolio-details .portfolio-details-slider .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #34b7a7;
+}
+
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #34b7a7;
+}
+
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(34, 34, 34, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li+li {
+  margin-top: 10px;
+}
+
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0;
+}
+
 
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 #contact {
   width: 100%;
-  height: 105vh;
   background: url("../img/Contact/nasa-Q1p7bh3SHj8-unsplash.jpg") top right;
   background-size: cover;
 }
+
 .contact .section-title h2 {
   color: white;
 }
@@ -1040,6 +1211,7 @@ img {
 .contact .info {
   width: 100%;
   background: #fff;
+  
 }
 
 .contact .info i {
@@ -1151,7 +1323,7 @@ img {
 
 .contact .php-email-form button[type=submit] {
   background: #34b7a7;
-  border: 10px;
+  border: 0;
   padding: 10px 30px 12px 30px;
   color: #fff;
   transition: 0.4s;
@@ -1160,8 +1332,6 @@ img {
 
 .contact .php-email-form button[type=submit]:hover {
   background: #3dc8b7;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 
 @keyframes animate-loading {
