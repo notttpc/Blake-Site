@@ -910,6 +910,7 @@ name title
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
+  margin-top: 50px;
   padding-bottom: 20px;
   position: relative;
   color: #fff;
@@ -997,6 +998,9 @@ name title
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+#portfolio .section-title h2{
+  margin-top: 50px;
+}
 #portfolio {
   width: 100%;
   background: url("../img/portfolio/octavian-dan-b21Ty33CqVs-unsplash.jpg") top right;
@@ -1206,6 +1210,7 @@ name title
 
 .contact .section-title h2 {
   color: white;
+  margin-top: 50px;
 }
 
 .contact .section-title p {
